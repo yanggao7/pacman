@@ -1,0 +1,9 @@
+FROM nginx:latest
+COPY . /usr/share/nginx/html/
+# 容器启动时，用 Downward API 注入的环境变量渲染 Pod 信息页面
+RUN printf '%s\n' \
+'#!/bin/sh' \
+'envsubst < /usr/share/nginx/html/pod-info.template > /usr/share/nginx/html/pod-info.html' \
+> /docker-entrypoint.d/40-pod-info.sh \
+&& chmod +x /docker-entrypoint.d/40-pod-info.sh
+EXPOSE 80

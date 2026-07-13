@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Pod Info</title></head>
+<body>
+  <h1>Pod Information</h1>
+  <p>Pod Name:    ${POD_NAME}</p>
+  <p>Pod IP:      ${POD_IP}</p>
+  <p>Namespace:   ${POD_NAMESPACE}</p>
+  <p>Node Name:   ${NODE_NAME}</p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.git
+.gitignore
+.svn
+.env
+*.md
+LICENSE
+Dockerfile*
+docker-compose*
+pod-info.template

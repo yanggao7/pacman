@@ -6,4 +6,4 @@
 LICENSE
 Dockerfile*
 docker-compose*
-pod-info.template
+# pod-info.template
